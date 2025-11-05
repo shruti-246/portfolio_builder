@@ -1,12 +1,10 @@
 {
   "name": "portfolio-builder",
   "private": true,
-  "packageManager": "pnpm@10.20.0",
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
-    "build": "pnpm -r build",
-    "dev": "pnpm --filter @app/web dev",
-    "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck"
+    "build:web": "npm run build --workspace=@app/web"
   }
 }
+
 
