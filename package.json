@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-builder",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build:web": "npm run build --workspace=@app/web"
+  }
+}
